@@ -28,6 +28,7 @@ html = """
 </html>
 """
 
+
 # Define the function that handles incoming client requests
 def handle_client(client_socket):
     # Receive the client's HTTP request
@@ -39,6 +40,7 @@ def handle_client(client_socket):
 
     # Close the client socket
     client_socket.close()
+
 
 # Set up the server socket
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
